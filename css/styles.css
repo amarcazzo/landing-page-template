@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #333;
+  line-height: 1.6;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.navbar {
+  display: flex;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  transition: 0.4s;
+  height: 5rem;
+}
+
+.logo {
+  height: 3rem;
+  filter: invert(100%);
+  transition: 0.4s;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-item {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #f4f4f4;
+  transition: 0.4s;
+}
+
+.link:hover {
+  color: skyblue;
+}
+
+.link:active {
+  color: skyblue;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 1rem 0 0 0;
+}
+
+.subtitle {
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+}
+
+section p {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+section#home {
+  background: url(https://source.unsplash.com/nF0nQuqBsrI/1600x900/) no-repeat
+    center center/cover;
+}
+
+section#about {
+  background: url(https://source.unsplash.com/354gcpqYVog/1600x900/) no-repeat
+    center center/cover;
+}
+
+section#service {
+  background: url(https://source.unsplash.com/V5eH8aol-pQ/1600x900/) no-repeat
+    center center/cover;
+}
+
+section#contact {
+  background: url(https://source.unsplash.com/bX9B9c-YasY/1600x900/) no-repeat
+    center center/cover;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  width: 55%;
+}
+
+.btn {
+  border-radius: 4px;
+  height: 2.5rem;
+  width: 30%;
+  outline: none;
+  border: none;
+}
+
+.btn-submit {
+  justify-self: end;
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 255, 0.3);
+}
+
+.form-control {
+  height: 2rem;
+  padding: 0.8rem;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.form-control:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 255, 0.3);
+}
+
+.form-control:focus {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 255, 0.3);
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 6rem !important;
+}
+
+.contact-form label {
+  font-size: 1.5rem;
+  justify-self: flex-end;
+  align-self: flex-start;
+}
